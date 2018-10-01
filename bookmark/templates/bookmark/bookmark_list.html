@@ -130,14 +130,7 @@ bookmark.id가 pk 매개변수로 지정되어
 따라서 BookmarkDV.as_view() 메소드가 담당하여
 bookmark_detail.html로 연결함. -->
 <a href="{% url 'detail' bookmark.id %}">
-{{ bookmark }}<!--
-{{ bookmark }} 템플릿 변수는
-Bookmark 테이블의 특정 레코드 하나를 의미하며,
-즉 Bookmark 클래스의 특정 객체를 의미하며,
-디폴트 컨텍스트 변수 object에 해당함.
-<ul> <li> 요소로 bookmark 객체를 지정하면
-bookmark.title이 출력되도록
-bookmark.models.Bookmark.__str__()에서 지정하였음. -->
+
 </a>
 </li>
       </th>
